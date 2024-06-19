@@ -1,0 +1,58 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-box {
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#LogoNoText{
+  width: 100px;
+  height: 80px;
+  padding: 10px;
+}
+
+#DateBox {
+  width: 48%;
+  max-width: 48%;
+  display: inline-block;
+  margin-right: 4%;
+}
+
+#Gender {
+  width: 48%;
+  max-width: 48%;
+  display: inline-block;
+  background-color: #D9D9D9;
+  height: 36px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #000000;
+}
+
+
+@media (max-width: 600px) {
+  .register-container {
+      padding: 10px;
+  }
+
+  .register-box {
+      padding: 15px;
+  }
+
+  #DateBox, #Gender {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 12px;
+  }
+}
