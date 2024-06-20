@@ -12,5 +12,17 @@ cur.execute('''
 );
             ''')
 
+cur.execute(
+    '''
+   CREATE TABLE Loja(
+   product_id INTEGER PRIMARY KEY AUTOINCREMENT,
+   name TEXT NOT NULL,
+   price DECIMAL(10, 5) NOT NULL,
+   stock INT NOT NULL,
+   description VCHAR(250) NOT NULL 
+   );
+'''
+)
+
 database.commit()
 database.close()
